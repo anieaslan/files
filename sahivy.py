@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 start = datetime(2019, 11, 9)
-end = datetime(2020, 7, 5)
+end = datetime(2020, 7, 17)
 
 # start = datetime(2020, 1, 1)
 # end = datetime(2020,2, 12)
@@ -33,9 +33,9 @@ days = [start + timedelta(days = i) for i in range(delta.days + 1)]
 
 import random
 
-new_list = [d for i, d in enumerate(days) if days[i].strftime('%A') in ['Monday', 'Wednesday','Fridays', 'Sunday']] # 
+new_list = [d for i, d in enumerate(days) if days[i].strftime('%A') in ['Monday', 'Tuesday', 'Wednesday','Fridays', 'Sunday']] # 
 t_t_s_d = [] 
-for i in range(int(len(new_list)/3)):
+for i in range(int(len(new_list)/5)):
     t_t_s_d.append(random.choice(new_list))
 
 days_list = [dt.day for dt in t_t_s_d]

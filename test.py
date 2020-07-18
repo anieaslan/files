@@ -17,10 +17,13 @@ print(a.get(6))
 #     return 42
 # f()
 
-class test():
-    id = 0
-    def __init__(self, id):
-        self.id = id
-        id = 2
-t = test(1)
-t.id
+# class test():
+#     id = 0
+#     def __init__(self, id):
+#         self.id = id
+#         id = 2
+# t = test(1)
+# t.id
+
+
+print(type(datetime))
