@@ -160,15 +160,15 @@
 
 # concat_string(to_string)
 
-a = 17
+# a = 17
 
-def mult(number, multiplier=5):
-    b = number * multiplier
-    return b
+# def mult(number, multiplier=5):
+#     b = number * multiplier
+#     return b
 
-c = mult(a)
+# c = mult(a)
 
-print(a, c)
+# print(a, c)
 
 # sqr = lambda x: x * x
 
@@ -182,3 +182,6 @@ print(a, c)
 
 # print(rest(4,5,6))
 
+div = lambda num, den: num/den if (den != 0) else 0
+
+print(div(4,0))
