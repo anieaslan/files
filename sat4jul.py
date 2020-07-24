@@ -137,9 +137,9 @@
 # \S: Any non-whitespace characters.
 # .: Any character except newline (\n).
 
-import re
+# import re
 
-text = 'My neighbor, Mr. Rogers, has 5 dogs.'
+# text = 'My neighbor, Mr. Rogers, has 5 dogs.'
 # # print(re.findall('[neigh]', text))
 # print(re.findall('[\d]', text))
 # print(re.findall('[\w]', text))
@@ -147,4 +147,38 @@ text = 'My neighbor, Mr. Rogers, has 5 dogs.'
 # print(re.findall('.', text))
 
 # print(re.split('[0-9]', text))
-print(re.sub('[0-9]', '100', text))
+# print(re.sub('[0-9]', '100', text))
+
+#FUNCTIONS 07/23
+
+
+# def concat_string(lst):
+#     string = ' '.join(lst)
+#     return print(string)
+
+# to_string = ['mi', 'familia', 'me', 'ama']
+
+# concat_string(to_string)
+
+a = 17
+
+def mult(number, multiplier=5):
+    b = number * multiplier
+    return b
+
+c = mult(a)
+
+print(a, c)
+
+# sqr = lambda x: x * x
+
+# def sqr_fnc(x):
+#     return print(x * x)
+
+# print(sqr(9))
+# print(sqr_fnc(9))
+
+# rest = lambda a,b,c: a - b - c
+
+# print(rest(4,5,6))
+
