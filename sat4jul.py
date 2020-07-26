@@ -182,6 +182,32 @@
 
 # print(rest(4,5,6))
 
-div = lambda num, den: num/den if (den != 0) else 0
+# div = lambda num, den: num/den if (den != 0) else 0
 
-print(div(4,0))
+# print(div(4,0))
+
+# sqrd = [lambda x: x * x for x in range(2,3)]
+# print(sqrd) # returns a lambda object
+
+sqr_d = lambda x: x * x
+sq = [sqr_d(x) for x in range(1,10)]
+print(sq)
+
+school = ['spanish', 'spanish-latam', 'spanish-europe', 'english', 'english-uk']
+space = [(lambda x : x.replace('-', ' ')) (x) for x in school]
+last = lambda x: x[-1]
+
+print(sorted(space, key=last))
+
+# Advantages and Disadvantages of Lambda Functions
+# Lambda functions have several advantages but also some disadvantages.
+
+# Advantages:
+
+# Lambda functions are concise since they only contain one expression.
+# Lambda can be passed around without a variable (hence why they are considered anonymous).
+# Lambda functions return automatically.
+# Disadvantages:
+
+# Sometimes lambda functions can over-complicate and it would be better to use a regular function instead. Particularly, when the expression is complex and may benefit from being separated into multiple lines.
+# They use different syntax (for example, if statements have different syntax in lambda functions).
