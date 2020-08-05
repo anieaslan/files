@@ -204,7 +204,7 @@ print(sorted(space, key=last))
 
 # Advantages:
 
-# Lambda functions are concise since they only contain one expression.
+# Lambda functions are concise since mthey only contain one expression.
 # Lambda can be passed around without a variable (hence why they are considered anonymous).
 # Lambda functions return automatically.
 # Disadvantages:
